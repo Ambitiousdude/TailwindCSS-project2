@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>product page</title>
 </head>
 <body>
-    
+    <!--Container starts-->
+    <div class="px-5 py-8 flex flex-col lg:p-20 gap-6 xl:px-28 xl:py-16">
+        <!--breadcrump starts-->
+        <div class="flex flex-row items-center">
+            <span class="font-sans font-semibold text-productgreen text-xs uppercase">Home</span>
+            <iconify-icon icon="tabler:chevron-right"></iconify-icon>
+            <span class="font-sans font-semibold text-productgreen text-xs uppercase">Furniture</span>
+            <iconify-icon icon="tabler:chevron-right"></iconify-icon>
+            <span class="font-sans font-semibold text-black text-xs uppercase">Aliquam Ododiam</span>
+        </div>
+        <!--breadcrump ends-->
+        
+        <!--Product container starts-->
+       <div class="flex flex-col gap-7 lg:flex-row">
+            <!--Product img starts-->
+            <div class="relative xl:w-1/2">
+                <img src="./images/product.webp" alt="" srcset="">
+                <span class="bg-productgreen text-white px-2 py-1 w-fit text-xs uppercase font-sans font-bold absolute top-4 left-4">sale!</span>
+            </div>
+            <!--Product img ends-->
+           
+            <!--Product details starts-->
+            <div class="flex flex-col gap-7 xl:w-1/2">  
+                <h2 class="font-sans font-bold text-zinc-900 text-3xl">Aliquam Ododiam</h2>
+                <div class="relative">
+                    <h3 class="font-sans font-bold text-zinc-800 text-xl">$69.00</h3>
+                    <span class="font-sans font-bold text-zinc-500 text-sm line-through absolute top-1 left-[70px]">$79.00</span>
+                </div>
+              
+                <div class="space-y-7">
+                    <p class="font-sans font-base font-normaltext-zinc-900">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Odio sequi dolorum nemo fugiat quia velit inventore excepturi.</p> 
+                    <p class="font-sans font-base font-normal text-zinc-900">Debitis illum! Ad ullam excepturi necessitatibus? Blanditiis, 
+                    natus corporis inventore perferendis sequi officia.</p>
+                </div>
+                
+               <div class="border-b border-zinc-400"></div>
+                
+                <button class="text-white bg-productgreen w-fit md:w-1/2 px-6 py-4 font-sans font-bold rounded-lg">Add to cart</button>
+
+            </div>
+             <!--Product details ends-->
+       
+        </div> 
+        <!--Product container ends-->
+    </div>
+    <!--Container ends-->
 </body>
 </html>
